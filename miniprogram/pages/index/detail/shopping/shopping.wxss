@@ -1,0 +1,13 @@
+.top {
+  width: 95%;
+  height: 150rpx;
+  background-color: white;
+  margin: 20rpx 20rpx 20rpx 20rpx;
+  border-radius: 5%;
+}
+
+.topData {
+  line-height: 200rpx;
+  font-size: 35rpx;
+  padding: 20rpx 20rpx;
+}

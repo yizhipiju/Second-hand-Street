@@ -1,0 +1,94 @@
+<view class="top">
+  <view bindtap='goSearch' data-label='' class='input'>🔎 搜一搜</view>
+  <view bindtap='goSearch' data-label='' class='button'>搜索</view>
+</view>
+
+<view class="background"></view>
+<view class="white">
+  <swiper bindtap="pay" class='swiper' circular="true" indicator-dots='true' autoplay='true' interval='4000' duration='550'>
+    <navigator >
+      <swiper-item>
+        <image class='swiperImage' mode='aspectFill' src='https://ae01.alicdn.com/kf/H7fad5c844384450999de3ee57180c7bcL.jpg'></image>
+      </swiper-item>
+    </navigator>
+    <swiper-item>
+      <image class='swiperImage' mode='aspectFill' src='https://ae01.alicdn.com/kf/H097d3c761494465c974f63e38582fb37N.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image class='swiperImage' mode='aspectFill' src='https://ae01.alicdn.com/kf/H4827092d705a41dc92326367f7525031K.jpg'></image>
+    </swiper-item>
+  </swiper>
+</view>
+
+
+<!-- 宫格 -->
+<van-grid>
+  <van-grid-item icon="/icon/school/1.jpg" link-type="navigateTo" border="false" url="../search/search?title=郑州信息科技职业学院" text="郑信科" />
+  <van-grid-item icon="/icon/school/2.jpg" link-type="navigateTo" border="false" url="../search/search?title=河南财经政法大学" text="财大" />
+  <van-grid-item icon="/icon/school/3.jpg" link-type="navigateTo" border="false" url="../search/search?title=河南职业技术学院" text="河职" />
+  <van-grid-item icon="/icon/school/4.jpg" link-type="navigateTo" border="false" url="../search/search?title=河南警察学院" text="豫警" />
+</van-grid>
+
+<van-grid>
+  <van-grid-item icon="/icon/school/5.jpg" link-type="navigateTo" border="false" url="../search/search?title=河南经贸职业学院" text="经贸" />
+  <van-grid-item icon="/icon/school/6.jpg" link-type="navigateTo" border="false" url="../search/search?title=河南司法警官职业学院" text="豫司" />
+  <van-grid-item icon="/icon/school/7.jpg" link-type="navigateTo" border="false" url="../search/search?title=河南牧业经济学院" text="牧院" />
+  <van-grid-item icon="/icon/school/8.jpg" link-type="navigateTo" border="false" url="../search/search?title=郑州航空工业管理学院" text="郑航" />
+</van-grid>
+
+<van-grid>
+  <van-grid-item icon="/icon/school/9.jpg" link-type="navigateTo" border="false" url="../search/search?title=河南财政金融学院" text="财院" />
+  <van-grid-item icon="/icon/school/10.jpg" link-type="navigateTo" border="false" url="../search/search?title=华北水利水电大学" text="华水" />
+  <van-grid-item icon="/icon/school/11.jpg" link-type="navigateTo" border="false" url="../search/search?title=河南中医药大学" text="河中医" />
+  <van-grid-item icon="/icon/school/12.jpg" link-type="navigateTo" border="false" url="../search/search?title=河南农业大学" text="农大" />
+</van-grid>
+
+
+<view style="margin-top: 25rpx;"></view>
+
+
+<!-- <van-divider contentPosition="center" customStyle="color: #1989fa;border-color: #1989fa;font-size: 18px;text-shadow: salmon;margin: 25px 3% 5rpx 3%;">最新发布</van-divider> -->
+
+<view>
+    <navigator url='/pages/index/shiyong/shiyong'>
+      <view >
+        <button class="shiyong"><image class="tupian" src=" /icon/shiyong.png"></image>登录使用方法</button>
+      </view>
+    </navigator>
+</view>
+
+
+
+<view style="margin-top: 25rpx;"></view>
+
+
+
+<swiper >
+  
+    
+    <!-- <swiper-item>
+      <image class='swiperImage' mode='aspectFill' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1591800610653&di=78c7319b73498f4521af5659a3d2e46c&imgtype=0&src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2F8988f20b239c5fc5354184334518e125cd8f42af3972b-tGi2Vk_fw658'></image>
+    </swiper-item> -->
+    
+  </swiper>
+
+
+
+
+
+<view class='ShopSon'>
+  <view class='ShopList'>
+    <view wx:for="{{shopping_list}}" data-openid="{{item._openid}}" wx:key="{{item._id}}" class='ShopShopping'>
+      <navigator url="detail/detail?id={{item._id}}">
+        <image src='{{item.fileList[0]}}' mode='aspectFill' class='ShopImage'></image>
+        <view class='ShopName'>{{item.title}}</view>
+        <view class='ShopPrice'>分类：{{item.type}}</view>
+      </navigator>
+    </view>
+  </view>
+</view>
+
+<!-- <view wx:if="{{shopping_list.length===0}}" class='not'>你的社区暂无商品信息</view>
+
+
+<view wx:elif="{{shopping_list.length < totalShopping}}" class="Load">正在加载……</view> -->

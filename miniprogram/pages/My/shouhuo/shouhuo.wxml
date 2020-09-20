@@ -1,0 +1,19 @@
+
+<!-- 我买的 -->
+<view wx:if="{{order.length > 0}}" class="List">
+  <view class="title2">我买的二手物品</view>
+  <view wx:for="{{order}}" wx:key="{{item._id}}" style="background-color: #ffffff;" class="order">
+    <image mode='aspectFill' src="{{item.fileList[0]}}" class="orderImage"></image>
+    <view style="width: 420rpx;">
+      <view class="orderName">{{item.title}}</view>
+      <view class="orderPrice">时间：{{item.time}}</view>
+      <view class="orderButton">
+        <view bindtap="over" data-id="{{item._id}}" class="orderbutton">确认收货</view>
+        <view bindtap="goOrder" data-id="{{item.id}}" class="orderbutton">查看订单</view>
+
+        <view bindtap="gorelation" data-id="{{item.openid}}" class="orderbutton">联系商家</view>
+
+      </view>
+    </view>
+  </view>
+</view>

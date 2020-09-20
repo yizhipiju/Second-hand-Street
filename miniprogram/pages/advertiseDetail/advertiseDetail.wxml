@@ -1,0 +1,24 @@
+<swiper indicator-dots='true' indicator-color='white' indicator-active-color='#0bb199' class='swiper'>
+  <block wx:for='{{detailList.fileList}}' wx:key="{{item._id}}">
+    <swiper-item>
+      <image bindtap='previewImg' class='swiper' src='{{item}}' data-src="{{item}}" mode='aspectFill'></image>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class='list'>
+  <view class='name'>
+    <text style="font-weight: bold;font-size: 33rpx;">{{detailList.title}}</text>
+  </view>
+</view>
+
+<van-panel title="机构描述：" desc="{{detailList.information}}">
+  <view class="weui-media-box__info">
+  <view class="weui-media-box__info__meta">区(县)：{{detailList.city}}</view>
+    <view class="weui-media-box__info__meta">街道：{{detailList.community}}</view>
+    <view class="weui-media-box__info__meta">时间：{{detailList.time}}</view>
+  </view>
+</van-panel>
+
+<view class="boda" bindtap="bodaPhone"><image style="width: 70rpx;height: 70rpx;margin-top: 17rpx;" src="/icon/boda.png"></image></view>
+

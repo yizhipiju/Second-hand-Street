@@ -1,0 +1,273 @@
+{
+	"miniprogramRoot": "miniprogram/",
+	"cloudfunctionRoot": "cloudfunctions/",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"enhance": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"nodeModules": true,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"bundle": true
+	},
+	"appid": "wx90bf05dda2bbae26",
+	"projectname": "%E5%8D%A1%E5%85%B6",
+	"libVersion": "2.10.1",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"cloudfunctionTemplateRoot": "cloudfunctionTemplate",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "db guide",
+					"pathName": "pages/databaseGuide/databaseGuide",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "分类",
+					"pathName": "pages/classification/classification",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "发布",
+					"pathName": "pages/My/Release/Release",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 3,
+					"name": "详情",
+					"pathName": "pages/index/detail/detail",
+					"query": "id=d9ea35c25e28795304c4e35c4efdcf06",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "订单",
+					"pathName": "pages/index/detail/shopping/shopping",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/My/My",
+					"query": "id=da51bd8c5e1b38ae012f702005033c64",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "测试",
+					"pathName": "pages/index/detail/shopping/shopping",
+					"query": "id=0ec685215e21b38202f061232b991fa4",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "广告",
+					"pathName": "pages/advertise/advertise",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/My/over/over",
+					"pathName": "pages/My/over/over",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/My/shouhuo/shouhuo",
+					"pathName": "pages/My/shouhuo/shouhuo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/My/fahuo/fahuo",
+					"pathName": "pages/My/fahuo/fahuo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/detail/detail",
+					"pathName": "pages/index/detail/detail",
+					"query": "id=4278fc3a5e4be35100841871143b5f7c",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/detail/detail",
+					"pathName": "pages/index/detail/detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/My/My",
+					"pathName": "pages/My/My",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/My/fahuo/fahuo",
+					"pathName": "pages/My/fahuo/fahuo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/My/My",
+					"pathName": "pages/My/My",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/My/fahuo/fahuo",
+					"pathName": "pages/My/fahuo/fahuo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/My/shouhuo/shouhuo",
+					"pathName": "pages/My/shouhuo/shouhuo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/shiyong/shiyong",
+					"pathName": "pages/index/shiyong/shiyong",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/search/search",
+					"pathName": "pages/search/search",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/classification/classification",
+					"pathName": "pages/classification/classification",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/My/wechat/wechat",
+					"pathName": "pages/My/wechat/wechat",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/detail/shopping/shopping",
+					"pathName": "pages/index/detail/shopping/shopping",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/detail/shopping/success/success",
+					"pathName": "pages/index/detail/shopping/success/success",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"scene": null
+				}
+			]
+		}
+	}
+}

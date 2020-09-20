@@ -1,0 +1,76 @@
+<van-notice-bar wx:if="{{wechat==null}}" left-icon="volume" mode="closeable" backgroundColor="#ff2d2d" color="#ffffff" text="请填写下方微信图标处的联系方式，便于他人购买您物品时联系您！" />
+<view class='Title'>
+  <image class='image' src='{{avatarUrl}}'></image>
+  <view>
+    <navigator url="/pages/login/login">
+      <view class='name'>{{nickName}}</view>
+    </navigator>
+    <navigator url='wechat/wechat' class='Intro'>
+      <image class='introImage' src='/icon/weixin.png'></image>
+      <text class='intro' wx:if="{{wechat!=null}}">{{wechat}}</text>
+      <text class='intro' wx:else>请填写微信号</text>
+    </navigator>
+  </view>
+</view>
+
+
+<view class="topIn">
+  <view style="width: 47%;height: 100%;float:left;">
+    <navigator url='/pages/My/MyShopping/MyShopping' class='Data1'>
+      <view class='data'>
+        <image class='dataIcon' src='/icon/shangpin.png'></image>
+        <text>我的店铺</text>
+      </view>
+    </navigator>
+  </view>
+  <view style="width: 47%;height: 100%;float:left;">
+    <navigator url='/pages/My/data/data' class='Data1'>
+      <view class='data'>
+        <image class='dataIcon' src='/icon/jieshao.png'></image>
+        <text>程序简介</text>
+      </view>
+    </navigator>
+  </view>
+</view>
+
+
+<view style="margin-top:10rpx;"></view>
+
+<view class="allDing">
+
+  <view class="line"></view>
+
+  <view class="navs">
+    <block wx:for-items="{{orderItems}}" wx:key="name">
+
+      <view class="nav-item" catchtap="toOrder" data-type="{{item.name}}" data-typeid="{{item.typeId}}">
+      
+        <navigator hover-class="none" url="{{item.url}}">
+          <image src="{{item.imageurl}}" class="nav-image" />
+        </navigator>
+        <navigator hover-class="none" url="{{item.url}}">
+        <text>{{item.name}}</text>
+        </navigator>
+      </view>
+
+    </block>
+  </view>
+</view>
+
+<view style="margin-top:20rpx;"></view>
+
+
+<view bindtap="goadvertising" class='Data'>
+  <view class='data'>
+    <image class='dataIcon' src='/icon/lianxi.png'></image>
+    <text class="dataText">联系我们</text>
+    
+  </view>
+</view>
+
+<view wx:if="{{advertising==true}}" bindtap="addAdervertis" class='Data'>
+  <view class='data'>
+    <image class='dataIcon' src='/icon/addAdervertis.png'></image>
+    <text class="dataText">管理员上传</text>
+  </view>
+</view>

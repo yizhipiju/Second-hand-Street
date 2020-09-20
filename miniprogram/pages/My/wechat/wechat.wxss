@@ -1,0 +1,52 @@
+
+.List{
+  background-color: white;
+  padding: 20rpx;
+}
+
+.input{
+  height: 90rpx;
+  border-bottom: 1rpx solid black;
+}
+
+.textarea{
+  margin-bottom: 25rpx;
+  width: 710rpx;
+  height: 200rpx;
+  z-index: 555;
+}
+
+.Photo{
+  width: 710rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.photo{
+  height: 232rpx;
+  width: 232rpx;
+  margin: 2rpx;
+  background-color: #f0f0f0;
+}
+
+.icon{
+  height: 170rpx;
+  width: 170rpx;
+  margin: 30rpx; 
+}
+
+.explain{
+  color: #515151;
+  font-size: 30rpx;
+  text-align: center;
+  margin: 20rpx;
+  width: 710rpx;
+}
+
+.button{
+  margin-top: 20rpx;
+  background: linear-gradient(to right,#1E90FF, #db3636);
+  width: 80%;
+}

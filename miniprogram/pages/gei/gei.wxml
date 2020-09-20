@@ -1,0 +1,85 @@
+
+    <form bindsubmit="formSubmit" bindreset="formReset">
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell ">
+          <view class="weui-cell__hd">
+            <view class="weui-label">标题</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input name="title" class="weui-input" value="{{title}}" type="text" placeholder="请输入标题" />
+          </view>
+        </view>
+      </view>
+<!--社区开始-->
+  <view class="weui-cell weui-cell_select">
+          <view class="weui-cell__hd weui-cell__hd_in-select-after">
+            <view class="weui-label">
+              <text style="padding-left:34rpx;">学校</text>
+            </view>
+          </view>
+          <view class="weui-cell__bd">
+            <picker bindchange="bindCountryChange1" name="type" value="{{schoolIndex}}" range="{{school}}">
+              <view class="weui-select weui-select_in-select-after">{{school[schoolIndex]}}</view>
+            </picker>
+          </view>
+        </view>
+  <!--社区结束-->
+      <!-- 日期开始 -->
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell ">
+          <view class="weui-cell__hd">
+            <view class="weui-label">日期</view>
+          </view>
+          <view class="weui-cell__bd">
+              <view class="weui-input">{{date}}</view>
+          </view>
+        </view>
+      </view>
+      <!-- 选择日期结束 -->
+      <!-- 选择分类，方式开始 -->
+      <view class="weui-cells weui-cells_after-title">
+
+        <view class="weui-cell weui-cell_select">
+          <view class="weui-cell__hd weui-cell__hd_in-select-after">
+            <view class="weui-label">
+              <text style="padding-left:34rpx;">分类</text>
+            </view>
+          </view>
+          <view class="weui-cell__bd">
+            <picker bindchange="bindCountryChange" name="type" value="{{countryIndex}}" range="{{countries}}">
+              <view class="weui-select weui-select_in-select-after">{{countries[countryIndex]}}</view>
+            </picker>
+          </view>
+        </view>
+      </view>
+      <!-- 选择分类，方式结束 -->
+      <!-- 备注开始 -->
+
+      <textarea name='information' type='text' value='{{content}}' class='textarea' maxlength='150' placeholder='请输入二手物品详细描述及金额'></textarea>
+      <!-- 备注结束 -->
+<!--miniprogram/pages/fb/fb.wxml-->
+<view class='pages'>
+ <!-- 图片 -->
+ <view class="images_box">
+  <block wx:key="imgbox" wx:for="{{imgbox}}">
+   <view class='img-box'>
+    <image class='img' src='{{item}}'></image>
+    <view class='img-delect' data-deindex='{{index}}' bindtap='imgDelete1'>
+     <image class='img' src='/icon/cha.png'></image>  
+    </view>
+   </view>
+  </block>
+  <view class='img-box' bindtap='addPic1' wx:if="{{imgbox.length<9}}">
+   <image class='img' src='/icon/photo.png'></image>  
+  </view>
+ </view>
+</view>
+
+<view class='explain'></view>
+
+      <view class="weui-btn-area">
+        <button class="weui-btn button" form-type="submit" bindtap='clearInputEvent'>
+          <text style="color: white;">提交</text>
+        </button>
+      </view>
+    </form>

@@ -1,0 +1,20 @@
+
+<!-- 我要发货的 -->
+<view wx:if="{{sell1.length > 0}}" class="List">
+  <view class="title1">我已经卖出的二手物品</view>
+  <view wx:for="{{sell1}}" wx:key="{{item._id}}" bindtap="goSellOrder" data-id="{{item._id}}" style="background-color: #ffffff;" class="order">
+
+    <image mode='aspectFill' src="{{item.fileList[0]}}" class="orderImage"></image>
+    <view style="width: 410rpx;">
+      <view class="orderName">{{item.title}}</view>
+      <view class="sellPrice">时间：{{item.time}}</view>
+      <view style="margin-top:5rpx;"></view>
+      <view class="orderButton">
+        <navigator url="/pages/index/detail/detail?id={{item.id}}">
+          <view class="orderbutton">查看商品</view>
+        </navigator>
+        <view bindtap="goPhone" data-id="{{item._openid}}" class="orderbutton">联系买家</view>
+      </view>
+    </view>
+  </view>
+</view>

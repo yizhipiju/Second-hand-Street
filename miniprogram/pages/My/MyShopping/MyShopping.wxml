@@ -1,0 +1,14 @@
+
+<view class='ShopSon'>
+  <view class='ShopList'>
+    <view wx:for="{{shopping_list}}" wx:key="{{item._id}}" class='ShopShopping' bindtap='goShoppingDetail' data-shopId='{{item._id}}'>
+      <image wx:if="{{item.fileList.length>0}}" src='{{item.fileList[0]}}' mode='aspectFill' class='ShopImage'></image>
+      <view class='ShopName'>{{item.title}}</view>
+      <view class='ShopPrice'>分类：{{item.type}}
+      <van-tag type="success" wx:if="{{item.over=='ok'}}">已卖</van-tag>
+      </view>
+    </view>
+  </view>
+</view>
+
+<navigator wx:if="{{shopping_list.length===0}}" url='/pages/My/Release/Release' class='not'>你还没有发布的闲置物品，去发布>></navigator>

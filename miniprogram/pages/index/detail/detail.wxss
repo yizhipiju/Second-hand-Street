@@ -1,0 +1,100 @@
+.swiper {
+  height: 650rpx;
+  width: 100%;
+  /* autoheight: */
+}
+
+button:not([size='mini']) {
+  min-height: 40px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.remove {
+  background-color: #ff8c00;
+  display: inline;
+  border-radius: 10%;
+  margin-left: 20rpx;
+}
+
+.list {
+  width: 702rpx;
+  background-color: white;
+  padding: 0rpx 25rpx;
+  padding-bottom: 16rpx;
+}
+
+/**index.wxss**/
+
+/*实现样式，类似于css*/
+
+.msg-box {
+  padding: 20px;
+}
+
+.send-box {
+  display: flex;
+}
+
+.input {
+  border: 1px solid #ccc;
+  padding: 12rpx 10rpx;
+}
+
+.msg-info {
+  display: block;
+  margin: 10px 0 0 0;
+  color: #390;
+}
+
+.place-input {
+  color: salmon;
+}
+
+.list-view {
+  margin: 20px 0 0 0;
+  
+}
+
+.item {
+  overflow: hidden;
+  border-bottom: 1px dashed #ccc;
+  height: 30px;
+  line-height: 30px;
+}
+
+.text1 {
+  float: left;
+}
+
+.close-btn {
+  float: right;
+  margin: 5px 5px 0 0;
+  
+}
+
+.user {
+  margin: 20rpx 15rpx;
+}
+
+.input {
+  position: fixed;
+  bottom: 0px;
+  z-index: 99;
+  background-color: white;
+  height: 60rpx;
+  width: 100%;
+}
+.botton{
+  width: 100%;
+  height: 100rpx;
+  background-color: white;
+}
+.bottom{
+  width: 100%;
+  height: 100rpx;
+  background-color: #f7f4f4;
+  font-size: 40rpx
+}

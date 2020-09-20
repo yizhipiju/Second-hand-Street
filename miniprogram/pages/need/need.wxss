@@ -1,0 +1,122 @@
+.Title {
+  height: 80rpx;
+  width: 100%;
+  position: fixed;
+  background-color: #f70719;
+  top: 0rpx;
+  z-index: 9999;
+  display: flex;
+  padding-top: 20rpx
+}
+
+
+.input {
+  display: flex;
+  border-radius: 10rpx;
+  height: 40rpx;
+  width: 78%;
+  margin: 5rpx 15rpx;
+  padding: 13rpx;
+  background-color: #f0f0f0;
+}
+.search {
+  height: 64rpx;
+  width: 105rpx;
+  margin: 5rpx 0rpx;
+  text-align: center;
+  line-height: 62rpx;
+  border-radius: 10rpx;
+  color: #ff8c00;
+  background-color: #f0f0f0;
+  font-size: 30rpx;
+}
+
+.hot {
+  margin: 10rpx 25rpx;
+  color: #515151;
+  font-size: 33rpx;
+}
+
+.Label {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0rpx 25rpx;
+}
+
+.label {
+  height: 40rpx;
+  font-size: 28rpx;
+  line-height: 39rpx;
+  text-align: center;
+  padding: 0 35rpx;
+  margin: 7.5rpx;
+  background-color: white;
+  border-radius: 50rpx;
+  color: #a8a8a8;
+  box-shadow: 0 0 7rpx #a8a8a8;
+}
+
+/* .shopSon{
+  position: absolute;
+  top: 280rpx;
+  width: 100%;
+  padding: 25rpx 0rpx;
+  background-color: white;
+} */
+
+.ShopList {
+  width: 97.4%;
+  margin: 1.3%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.ShopShopping {
+  width: 47%;
+  background-color: white;
+  margin: 1.5%;
+  border-radius: 10rpx;
+  /* box-shadow: 0 0 3rpx #E0E0E0; */
+  padding-bottom: 10rpx;
+}
+
+.ShopImage {
+  height: 350rpx;
+  width: 100%;
+  background-color: #e0e0e0;
+  border-top-right-radius: 10rpx;
+  border-top-left-radius: 10rpx;
+}
+
+.ShopName {
+  height: 45rpx;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 10rpx;
+
+}
+
+.ShopPrice {
+  margin-top: 10rpx;
+  color: rgb(189, 189, 189);
+  font-size: 20rpx;
+  padding: 0rpx 10rpx;
+}
+
+.not {
+  height: 120rpx;
+  widows: 700rpx;
+  margin: 35rpx 25rpx;
+  text-align: center;
+  line-height: 120rpx;
+  border: 1rpx solid black;
+  border-radius: 10rpx;
+  color: rgb(0, 0, 0);
+}

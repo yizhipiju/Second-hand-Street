@@ -1,0 +1,45 @@
+
+.ShopList{
+  width: 97.4%;
+  margin: 1.3%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.ShopShopping{
+  width: 47%;
+  background-color: white;
+  margin: 1.5%;
+  border-radius: 10rpx;
+  /* box-shadow: 0 0 3rpx #E0E0E0; */
+  padding-bottom: 10rpx;
+}
+
+.ShopImage{
+  height: 350rpx;
+  width: 100%;
+  background-color: #E0E0E0;
+  border-top-right-radius: 10rpx;
+  border-top-left-radius: 10rpx;
+}
+
+.ShopName{
+  height: 45rpx;
+  padding: 0rpx 10rpx;
+	width: 350rpx;
+	/*超出部分隐藏*/
+	overflow:hidden;
+	/*不换行*/
+	white-space:nowrap;
+	/*添加...*/
+	text-overflow:ellipsis;
+}
+
+.ShopPrice {
+  margin-top: 10rpx;
+  color: rgb(189, 189, 189);
+  font-size: 20rpx;
+  padding: 0rpx 10rpx;
+}

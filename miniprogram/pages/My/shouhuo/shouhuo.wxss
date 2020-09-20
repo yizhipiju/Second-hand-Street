@@ -1,0 +1,104 @@
+
+.navigator-hover {
+  background-color: rgba(0, 0, 0, 0);
+  opacity: .7;
+}
+
+navigator {
+  display: inherit;
+}
+
+.not {
+  width: 100%;
+  line-height: 750rpx;
+  text-align: center;
+  color: #303030;
+}
+
+.List {
+  width: 100%;
+}
+
+.title {
+  margin: 3%;
+  color: #9804fa;
+}
+.title1 {
+  margin: 3%;
+  color: #fa0404;
+}
+.title2 {
+  margin: 3%;
+  color: #2dfa04;
+}
+.order {
+  margin: 3%;
+  padding: 3%;
+  width: 88%;
+  background-color: white;
+  border-radius: 15rpx;
+  display: flex;
+}
+
+.orderImage {
+  height: 200rpx;
+  width: 200rpx;
+  background-color: #f0f0f0;
+  margin-right: 14rpx;
+}
+
+.orderName {
+  /* line-height: 70rpx; */
+  height: 80rpx;
+  width: 350rpx;
+  /*超出部分隐藏*/
+  overflow: hidden;
+  /*不换行*/
+  white-space: nowrap;
+  /*添加...*/
+  text-overflow: ellipsis;
+  color: black;
+  font-weight: bold;
+}
+
+.sellPrice {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sellContent {
+  height: 80rpx;
+  font-size: 28rpx;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.orderPrice {
+  height: 60rpx;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.orderButton {
+  display: flex;
+  font-size: 26rpx;
+}
+
+.orderbutton {
+  line-height: 60rpx;
+  width: 220rpx;
+  color: #7232dd;
+  text-align: center;
+  border: 1rpx solid #7232dd;
+  border-radius: 10rpx;
+  margin-right: 10rpx;
+}

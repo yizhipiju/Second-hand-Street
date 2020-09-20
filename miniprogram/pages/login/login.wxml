@@ -1,0 +1,16 @@
+
+<image class='bgi' style='height:{{height}}' src="https://7363-school-0skj7-1301099630.tcb.qcloud.la/icon/login.jpg?sign=1880f736709f69fdd643282ef233c189&t=1580715977" ></image>
+
+<view class='logo'>
+  <view class='title'>龙子湖二手街</view>
+</view>
+
+<button 
+open-type="getUserInfo" bindgetuserinfo="getUserInfo" 
+lang='zh_CN' 
+class='login'
+>
+授权登录
+</button>
+
+<view bindtap="notLogin" class="notLogin">不授权</view>

@@ -1,0 +1,87 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell ">
+      <view class="weui-cell__hd">
+        <view class="weui-label">机构名</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input name="title" class="weui-input" value="{{title}}" type="text" placeholder="请输入机构名" />
+      </view>
+    </view>
+  </view>
+  <!--市区开始-->
+<view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell ">
+      <view class="weui-cell__hd">
+        <view class="weui-label">区(县)</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input name="city" class="weui-input" value="{{city}}" type="text" placeholder="请输入区名或县城名" />
+      </view>
+    </view>
+  </view>
+  <!--市区结束-->
+  <!--社区开始-->
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell ">
+      <view class="weui-cell__hd">
+        <view class="weui-label">街道</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input name="community" class="weui-input" value="{{community}}" type="text" placeholder="请输入街道名" />
+      </view>
+    </view>
+  </view>
+  <!--社区结束-->
+  <!--电话开始-->
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell ">
+      <view class="weui-cell__hd">
+        <view class="weui-label">手机号</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input name="phone" class="weui-input" value="{{phone}}" type="text" placeholder="请输入手机号" />
+      </view>
+    </view>
+  </view>
+  <!--电话结束-->
+  <!-- 日期开始 -->
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell ">
+      <view class="weui-cell__hd">
+        <view class="weui-label">日期</view>
+      </view>
+      <view class="weui-cell__bd">
+        <view class="weui-input">{{date}}</view>
+      </view>
+    </view>
+  </view>
+  <!-- 选择日期结束 -->
+
+  <!-- 备注开始 -->
+
+  <textarea name='information' type='text' class='textarea' maxlength='150' placeholder='请输入机构概述'></textarea>
+  <!-- 备注结束 -->
+  <!--miniprogram/pages/fb/fb.wxml-->
+  <view class='pages'>
+    <!-- 图片 -->
+    <view class="images_box">
+      <block wx:key="imgbox" wx:for="{{imgbox}}">
+        <view class='img-box'>
+          <image class='img' src='{{item}}'></image>
+          <view class='img-delect' data-deindex='{{index}}' bindtap='imgDelete1'>
+            <image class='img' src='/icon/cha.png'></image>
+          </view>
+        </view>
+      </block>
+      <view class='img-box' bindtap='addPic1' wx:if="{{imgbox.length<9}}">
+        <image class='img' src='/icon/photo.png'></image>
+      </view>
+    </view>
+  </view>
+  <view class="weui-btn-area">
+    <button class="weui-btn button" form-type="submit" bindtap='clearInputEvent'>
+      <text style="color: white;">提交</text>
+    </button>
+  </view>
+</form>

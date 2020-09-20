@@ -1,0 +1,18 @@
+<view class="page">
+    <view class="weui-msg">
+        <view class="weui-msg__icon-area">
+            <icon type="success" size="64"></icon>
+        </view>
+        <view class="weui-msg__text-area">
+            <view class="weui-msg__title">获得成功</view>
+        </view>
+        <view class="weui-msg__opr-area">
+            <view class="weui-btn-area">
+                <button class="weui-btn" type="primary" bindtap="fanhui">返回首页</button>
+            </view>
+        </view>
+        <view class="weui-msg__tips-area">
+            <view class="weui-msg__tips">感谢您使用龙子湖二手街，祝您生活愉快，学业顺利！</view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,78 @@
+@import "/miniprogram_npm/vant-weapp/common/index.wxss";
+.top {
+  width: 100%;
+  height: 100rpx;
+  background-color: #f70719;
+  line-height: 100rpx;
+}
+.city{
+  width: 20%;
+  height: 100%;
+  float: left;
+  padding-left:30rpx;
+  color:white;
+  overflow: hidden;
+  /*不换行*/
+  white-space: nowrap;
+  /*添加...*/
+  text-overflow: ellipsis;
+}
+.data {
+  border-radius: 20rpx;
+  box-sizing: border-box;
+  margin-top: 15rpx;
+  width: 100%;
+  height: 250rpx;
+  background-color: white;
+}
+.image{
+  border-radius: 5rpx;
+  width: 35%;
+  float: left;
+  overflow: hidden;
+  height: 100%;
+}
+.dataRight{
+  float: left;
+  margin-left: 20rpx;
+  width: 61%;
+  height: 100%;
+}
+.in1{
+  width: 100%;
+  color: black;
+  font-weight: bold;
+  height: 25%;
+  overflow: hidden;
+  /*不换行*/
+  white-space: nowrap;
+  /*添加...*/
+  text-overflow: ellipsis;
+}
+.in2{
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  font-size: 27rpx;
+  color: rgb(164, 161, 167);
+  /*添加...*/
+  text-overflow: ellipsis;
+  white-space: 2;
+}
+.in3{
+  width: 100%;
+  height: 25%;
+  font-size: 24rpx;
+  padding-top: 10rpx;
+}
+.ShopName {
+  height: 45rpx;
+  padding: 0rpx 10rpx;
+  width: 350rpx;
+  /*超出部分隐藏*/
+  overflow: hidden;
+  /*不换行*/
+  white-space: nowrap;
+  /*添加...*/
+  text-overflow: ellipsis;
+}

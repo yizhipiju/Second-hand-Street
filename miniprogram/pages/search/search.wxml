@@ -1,0 +1,29 @@
+<view class='Title'>
+
+  <view class='input'>
+    <input bindinput='searchInput' confirm-type="搜索" bindconfirm="search" class='inputText' value="{{label}}" placeholder="🔎 搜一搜"></input>
+  </view>
+  <view bindtap='search' class='search'>搜索</view>
+</view>
+
+<view style='height:100rpx'></view>
+
+
+<view wx:if="{{shopping_list.length!=0}}">
+
+  <view class='ShopSon'>
+    <view class='ShopList'>
+      <view wx:for="{{shopping_list}}" wx:key="{{item._id}}" class='ShopShopping'>
+        <navigator url="../index/detail/detail?id={{item._id}}">
+          <image src='{{item.fileList[0]}}' mode='aspectFill' class='ShopImage'></image>
+          <view class='ShopName'>{{item.title}}</view>
+          <view class='ShopPrice'>分类：{{item.type}}</view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 
+<view wx:if="{{ff===false}}">
+  <view class='not'>未找到{{label}}，换个名字试试</view>
+</view> -->

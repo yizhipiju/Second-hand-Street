@@ -1,0 +1,68 @@
+
+.bgi{
+  /* height: 1577rpx; */
+  width: 100%;
+}
+
+.logo{
+  position: absolute;
+  top: 970rpx;
+  left: 158rpx;
+  display: flex;
+  width: 369rpx;
+  border-bottom: 5rpx solid #2b0ae4;
+  padding: 0 15rpx;
+  opacity: 0.8;
+}
+
+.title{
+  font-size: 45rpx;
+  color: #2b0ae4;
+  position: absolute;
+  left: 80rpx;
+  top:-65rpx;
+}
+
+.login{
+  width: 400rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  position: absolute;
+  top: 1000rpx;
+  left: 175rpx;
+  font-size: 30rpx;
+  background-color: #2b0ae4;
+  color: white;
+  text-shadow: 0 0 5rpx #2b0ae4;
+  opacity: 0.7;
+}
+
+.notLogin{
+  width: 200px;
+  height: 70rpx;
+  line-height: 70rpx;
+  border: 1rpx solid #2b0ae4;
+  position: absolute;
+  top: 1080rpx;
+  left: 175rpx;
+  font-size: 33rpx;
+  color: #2803f8;
+  text-shadow: 0 0 5rpx #b1ae0b;
+  text-align: center;
+  border-radius: 10rpx;
+  opacity: 0.7;
+}
+button:not([size='mini']){
+margin-left: auto;
+margin-right: auto;
+width: 200px;
+min-height: 0px;
+
+}
+button {
+line-height: 1.41176471;
+border-radius: 4px;
+font-weight: 700;
+font-size: 17px;
+padding: 0px 0px;
+}

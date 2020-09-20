@@ -1,0 +1,56 @@
+
+<view class="top">
+  <view class="topData" bindtap="goPhone">
+    <van-cell-group>
+      <van-field value="{{phone}}" label="电话：" type="number" placeholder="请填写电话，以便发布者联系您" autosize border="{{ false }}" disabled />
+    </van-cell-group>
+  </view>
+
+</view>
+
+
+
+<view class="page__bd">
+  <view class="weui-form-preview">
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell">
+        <view class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+          <image src="{{shopping[0].fileList[0]}}" style="width: 50px; height: 50px; display: block;border-radius: 10%;" />
+        </view>
+        <view class="weui-cell__bd">
+          <view>{{shopping[0].title}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="weui-form-preview__bd">
+      <view class="weui-form-preview__item">
+        <view class="weui-form-preview__label">时间</view>
+        <view class="weui-form-preview__value">{{shopping[0].time}}</view>
+      </view>
+      <view class="weui-form-preview__item">
+        <view class="weui-form-preview__label">分类</view>
+        <view class="weui-form-preview__value">{{shopping[0].type}}</view>
+      </view>
+    </view>
+    <view class="weui-form-preview__ft">
+      <view class="weui-form-preview__btn weui-form-preview__btn_primary" hover-class="weui-form-preview__btn_active" bindtap="right" data-fileId="{{shopping[0].fileList}}" data-shopId='{{shopping[0]._id}}'>提交
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="weui-form__tips-area">
+  <label for="weuiAgree" class="weui-agree">
+    <navigator url="/pages/My/data/data">
+      <p style="color:blue;">《相关说明》</p>
+    </navigator>
+  </label>
+</view>
+<view class="weui-form__extra-area">
+  <view class="weui-footer">
+    <view class="weui-footer__links">
+      <view bindtap="goKaifa" class="weui-footer__link">联系开发商</view>
+    </view>
+    <view class="weui-footer__text">龙子湖二手街，真心为您服务</view>
+  </view>
+</view>

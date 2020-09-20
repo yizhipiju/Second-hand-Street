@@ -1,0 +1,15 @@
+
+<!-- 我卖出去的 -->
+<view wx:if="{{sell.length > 0}}" class="List">
+  <view class="title">我卖出的</view>
+  <view wx:for="{{sell}}" wx:key="{{item._id}}" bindtap="goSellOrder" data-id="{{item._id}}" style="background-color: #ffffff;" class="order">
+    <navigator url="/pages/index/detail/detail?id={{item._id}}">
+      <image mode='aspectFill' src="{{item.fileList[0]}}" class="orderImage"></image>
+      <view style="width: 410rpx;">
+        <view class="orderName">{{item.title}}</view>
+        <view class="sellPrice">时间：{{item.time}}</view>
+        <view class="sellContent">分类：{{item.type}}</view>
+      </view>
+    </navigator>
+  </view>
+</view>

@@ -1,0 +1,105 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/login",
+    "pages/advertise/advertise",
+    "pages/advertiseDetail/advertiseDetail",
+    "pages/index/shiyong/shiyong",
+    "pages/index/detail/detail",
+    "pages/index/detail/HerShopping/HerShopping",
+    "pages/index/detail/shopping/shopping",
+    "pages/index/detail/shopping/success/success",
+    "pages/index/detail/shopping/map/map",
+    "pages/index/detail/shopping/Phone/Phone",
+    "pages/search/search",
+    "pages/classification/classification",
+    "pages/My/My",
+    "pages/need/need",
+    "pages/gei/gei",
+    "pages/My/wechat/wechat",
+    "pages/My/data/data",
+    "pages/My/MyShopping/MyShopping",
+    "pages/My/right/right",
+    "pages/My/over/over",
+    "pages/My/fahuo/fahuo",
+    "pages/My/shouhuo/shouhuo",
+    "pages/My/Release/Release",
+    "pages/My/addAdvertising/addAdvertising"
+  ],
+  "usingComponents": {
+    "van-grid": "miniprogram_npm/vant-weapp/grid/index",
+    "van-grid-item": "miniprogram_npm/vant-weapp/grid-item/index",
+    "van-button": "miniprogram_npm/vant-weapp/button/index",
+    "van-cell": "miniprogram_npm/vant-weapp/cell/index",
+    "van-cell-group": "miniprogram_npm/vant-weapp/cell-group/index",
+    "van-icon": "miniprogram_npm/vant-weapp/icon/index",
+    "van-tab": "miniprogram_npm/vant-weapp/tab/index",
+    "van-tabs": "miniprogram_npm/vant-weapp/tabs/index",
+    "van-uploader": "miniprogram_npm/vant-weapp/uploader/index",
+    "van-dropdown-menu": "miniprogram_npm/vant-weapp/dropdown-menu/index",
+    "van-dropdown-item": "miniprogram_npm/vant-weapp/dropdown-item/index",
+    "van-tree-select": "miniprogram_npm/vant-weapp/tree-select/index",
+    "van-goods-action": "miniprogram_npm/vant-weapp/goods-action/index",
+    "van-goods-action-icon": "miniprogram_npm/vant-weapp/goods-action-icon/index",
+    "van-goods-action-button": "miniprogram_npm/vant-weapp/goods-action-button/index",
+    "van-tag": "miniprogram_npm/vant-weapp/tag/index",
+    "van-field": "miniprogram_npm/vant-weapp/field/index",
+    "van-divider": "miniprogram_npm/vant-weapp/divider/index",
+    "van-panel": "miniprogram_npm/vant-weapp/panel/index",
+    "van-popup": "miniprogram_npm/vant-weapp/popup/index",
+    "van-rate": "miniprogram_npm/vant-weapp/rate/index",
+    "van-notice-bar": "miniprogram_npm/vant-weapp/notice-bar/index",
+    "van-skeleton": "miniprogram_npm/vant-weapp/skeleton/index",
+    "van-search": "miniprogram_npm/vant-weapp/search/index",
+    "van-card": "miniprogram_npm/vant-weapp/card/index"
+  },
+  "tabBar": {
+    "selectedColor":"#f70719",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        
+        "iconPath": "icon/p1.png",
+        "selectedIconPath": "icon/p.png"
+      },
+      {
+        "pagePath": "pages/classification/classification",
+        "text": "分类",
+        "iconPath": "icon/s1.png",
+        "selectedIconPath": "icon/s.png"
+      },
+      {
+        "pagePath": "pages/gei/gei",
+        "text": "我要卖",
+        "iconPath": "icon/wo1.png",
+        "selectedIconPath": "icon/wo.png"
+      },
+      {
+        "pagePath": "pages/My/My",
+        "text": "我的",
+        "iconPath": "icon/w1.png",
+        "selectedIconPath": "icon/w.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f70719",
+    "navigationBarTitleText": "龙子湖二手街",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "plugins": {
+    "WechatSI": {
+      "version": "0.3.3",
+      "provider": "wx069ba97219f66d99"
+    }
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "请允许获取您的位置信息！"
+    }
+  }
+}

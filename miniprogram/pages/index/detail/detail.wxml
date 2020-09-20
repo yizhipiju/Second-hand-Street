@@ -1,0 +1,112 @@
+<swiper indicator-dots='true' indicator-color='white' indicator-active-color='#0bb199' class='swiper'>
+  <block wx:for='{{shopping_list.fileList}}' wx:key="{{item._id}}">
+    <swiper-item>
+      <image bindtap='previewImg' class='swiper' src='{{item}}' data-src="{{item}}" mode='aspectFill'></image>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell">
+    <view class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+      <image src="{{shopping_list.avatarUrl}}" style="width: 50px; height: 50px; display: block" />
+
+    </view>
+    <view class="weui-cell__bd">
+      <view>{{shopping_list.nickName}}
+        <text style="padding-left:40%;color:#ff8c00;font-size: 20rpx;">距离您：{{juli}}</text>
+      </view>
+      <view style="font-size: 13px;color: #888888;">{{shopping_list.time}}<text style="margin-left:10rpx;color:green">卖家店铺所有商品数量:{{myShoppingCount}}</text></view>
+    </view>
+  </view>
+</view>
+
+<view class='list'>
+  <view class='name'>
+    <text style="font-weight: bold;font-size: 33rpx;">{{shopping_list.title}}</text>
+
+    <view wx:if="{{remove}}" bindtap='remove' data-fileId="{{shopping_list.fileList}}" data-shopId='{{shopping_list._id}}' class='remove'>
+      <text style="padding:0rpx 20rpx;color:white;">下架</text>
+    </view>
+  </view>
+</view>
+
+
+
+
+<van-panel title="二手物品金额及描述：" desc="{{shopping_list.information}}">
+  <view class="weui-media-box__info">
+    
+    <view class="weui-media-box__info__meta">{{shopping_list.time}}</view>
+    <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">{{shopping_list.type}}</view>
+  </view>
+</van-panel>
+
+<view class="bottom"></view>
+
+
+
+<van-goods-action>
+  <!-- <van-goods-action-icon icon="edit" text="评论留言" bind:click="showPopup" /> -->
+  <van-goods-action-button icon="edit" text="评论留言" bind:click="showPopup" />
+  <van-goods-action-button bindtap="goHerShopping" class="button" size="small" text="进入卖家店铺" type="warning" />
+
+
+  <van-goods-action-button class="button" size="small" text="立即获得" id="{{shopping_list._id}}" bind:click="goShopping" />
+</van-goods-action>
+
+
+<van-popup show="{{ show }}" bind:close="onClose" closeable position="bottom" custom-style="height: 70%">
+
+  <view class="weui-half-screen-dialog__hd__main">
+    <text class="weui-half-screen-dialog__title">评论区</text>
+  </view>
+
+
+  <view class="user" wx:for="{{comment_list}}">
+    <view bindtap="aiteWho" data-name="{{item.user_name}}">
+      <view style="width: 15%;height: 100rpx;float: left;">
+        <image src="{{item.user_image}}" style="width: 80rpx;height: 80%;border-radius: 50%;"></image>
+      </view>
+
+      <view style="width: 15%;height: 100rpx;float: right;">
+        <view style="height: 50%;width: 100%;text-align: center;">
+          <van-rate wx:if="{{item.value===true}}" style="" count="1" value="1" icon="like" data-_id="{{item._id}}" size="22px" void-icon="like-o" color="red" bind:change="onChange" />
+
+          <van-rate wx:if="{{item.value===false}}" style="" count="1" value="0" icon="like" data-_id="{{item._id}}" size="22px" void-icon="like-o" color="red" bind:change="onChange" />
+        </view>
+        <view style="height: 50%;width: 100%;">
+          <view wx:if="{{item.number>0}}" style="font-size: 30rpx;color:red;text-align: center;">{{item.number}}</view>
+        </view>
+      </view>
+
+      <view style="height: 50%;width: 85%;line-height: 60rpx;color: rgb(115, 113, 116);">{{item.user_name}}
+
+      </view>
+
+
+      <view style="padding-left:15%;width: 70%;">{{item.comment}}</view>
+
+
+
+    </view>
+
+
+
+  </view>
+  <view class="botton"></view>
+
+
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="weui-cell  weui-cell_vcode input">
+      <view class="weui-cell__bd">
+        <input name="comment" class="weui-input" value="{{comment}}" placeholder="留下你的精彩评论吧" />
+      </view>
+      <view class="weui-cell__ft">
+        <button form-type="submit" bindtap='clearInputEvent' style="background-color: #ff8c00;color: white;border-radius: 0px;">发送</button>
+      </view>
+    </view>
+  </form>
+
+
+</van-popup>

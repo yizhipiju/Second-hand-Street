@@ -1,0 +1,16 @@
+<van-notice-bar
+    left-icon="volume"
+    mode="closeable"
+    backgroundColor="#ff2d2d"
+    color="#F0F8FF"
+    text="为了您的隐私保护，推荐填写微信号！感谢使用龙子湖二手街！"
+  />
+<form bindsubmit='formSubmit'>
+  <view class='List'>
+    <textarea name='inputText' type='text' value='{{textContent}}' class='textarea' maxlength='300' placeholder='请填写联系方式：微信号或者电话号码。'></textarea>
+  </view>
+
+  <button class="weui-btn button" form-type="submit" open-type='getUserInfo'>
+    <text style="color: white;">提交</text>
+  </button>
+</form>
